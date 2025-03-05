@@ -19,7 +19,6 @@ echo \
 sudo apt-get update
 
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-source /opt/ros/$CHOOSE_ROS_DISTRO/setup.bash
 
 echo "success installing docker"
 echo "alias docker='sudo docker'" >> ~/.bashrc
