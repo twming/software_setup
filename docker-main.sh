@@ -22,3 +22,5 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 
 echo "success installing docker"
 echo "alias docker='sudo docker'" >> ~/.bashrc
+
+source ~/.bashrc
