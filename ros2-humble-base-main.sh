@@ -51,21 +51,7 @@ printf '\033[33m%s\033[m\n' "=================================================="
 printf '\033[33m%s\033[m\n' "|           Install ROS dependencie              |"
 printf '\033[33m%s\033[m\n' "=================================================="
 
-sudo apt install -y libserial-dev
-sudo apt install -y ros-humble-ros2-control
-sudo apt install -y ros-humble-ros2-controllers
-sudo apt install -y ros-humble-xacro
-sudo apt install -y ros-humble-joint-state-publisher-gui
-sudo apt install -y ros-humble-robot-localization
-sudo apt install -y ros-humble-joy
-sudo apt install -y ros-humble-joy-teleop
-sudo apt install -y ros-humble-tf-transformations
-
-sudo apt install -y ros-humble-gazebo-ros2-control
-sudo apt install -y ros-humble-joint-state-broadcaster
-sudo apt install -y ros-humble-velocity-controllers
-sudo apt install -y ros-humble-diff-driver-controller
-
+sudo apt install -y libserial-dev ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-xacro ros-humble-joint-state-publisher-gui ros-humble-robot-localization ros-humble-joy ros-humble-joy-teleop ros-humble-tf-transformations ros-humble-gazebo-ros2-control ros-humble-joint-state-broadcaster ros-humble-velocity-controllers ros-humble-diff-driver-controller
 pip install smbus
 
 printf '\033[33m%s\033[m\n' "=================================================="
