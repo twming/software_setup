@@ -65,7 +65,7 @@ echo "source /opt/ros/$CHOOSE_ROS_DISTRO/setup.bash" >> ~/.bashrc
 
 grep -F "export ROS_DOMAIN_ID=30" ~/.bashrc ||
 echo "export ROS_DOMAIN_ID=30" >> ~/.bashrc
-source ~/.bahsrc
+source ~/.bashrc
 
 printf '\033[33m%s\033[m\n' "=================================================="
 printf '\033[33m%s\033[m\n' "|           Pulling BabyBot         |"
