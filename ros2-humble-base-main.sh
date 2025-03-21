@@ -20,7 +20,7 @@ if ! dpkg --print-architecture | grep -q 64; then
 fi
 
 printf '\033[33m%s\033[m\n' "=================================================="
-printf '\033[33m%s\033[m\n' "|           Updating your Ubuntu 22.05           |"
+printf '\033[33m%s\033[m\n' "|           Update Ubuntu 22.05                  |"
 printf '\033[33m%s\033[m\n' "=================================================="
 
 sudo apt update && sudo apt install locales -y
@@ -29,7 +29,7 @@ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 printf '\033[33m%s\033[m\n' "=================================================="
-printf '\033[33m%s\033[m\n' "|           Get ROS 2 Humble key                 |"
+printf '\033[33m%s\033[m\n' "|           Get ROS Humble key                   |"
 printf '\033[33m%s\033[m\n' "=================================================="
 
 sudo apt install -y software-properties-common 
@@ -40,7 +40,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 
 
 printf '\033[33m%s\033[m\n' "=================================================="
-printf '\033[33m%s\033[m\n' "|           Install ROS 2 Humble                 |"
+printf '\033[33m%s\033[m\n' "|           Install ROS Humble                   |"
 printf '\033[33m%s\033[m\n' "=================================================="
 
 sudo apt update 
@@ -68,15 +68,6 @@ echo "export ROS_DOMAIN_ID=30" >> ~/.bashrc
 source ~/.bashrc
 
 printf '\033[33m%s\033[m\n' "=================================================="
-printf '\033[33m%s\033[m\n' "|           Pulling BabyBot         |"
+printf '\033[33m%s\033[m\n' "|           ROS Installation Successful          |"
 printf '\033[33m%s\033[m\n' "=================================================="
 
-cd ~
-git clone http://github.com/twming/babybot
-
-set +u
-
-source /opt/ros/$CHOOSE_ROS_DISTRO/setup.bash
-
-echo "success installing ROS2 $CHOOSE_ROS_DISTRO"
-echo "Run 'source /opt/ros/$CHOOSE_ROS_DISTRO/setup.bash'"
