@@ -53,6 +53,18 @@ sudo apt install -y ros-humble-ros-base
 sudo apt install -y ros-humble-turtlebot3-bringup
 
 printf '\033[1;32m%s\033[m\n' "=================================================="
+printf '\033[1;32m%s\033[m\n' "|           Update ROS Environment Variables     |"
+printf '\033[1;32m%s\033[m\n' "|           TODO: HERE (Step 9)                  |"
+printf '\033[1;32m%s\033[m\n' "=================================================="
+
+echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
+echo 'export ROS_DOMAIN_ID=30' >> ~/.bashrc
+echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
+echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc
+
+source ~/.bashrc
+
+printf '\033[1;32m%s\033[m\n' "=================================================="
 printf '\033[1;32m%s\033[m\n' "|           Install LDS-02 Driver                |"
 printf '\033[1;32m%s\033[m\n' "|           TODO: HERE (Step 8)                  |"
 printf '\033[1;32m%s\033[m\n' "=================================================="
@@ -64,16 +76,6 @@ git clone -b humble https://github.com/ROBOTIS-GIT/ld08_driver.git
 cd ~/turtlebot3_ws/
 colcon build
 echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
-
-printf '\033[1;32m%s\033[m\n' "=================================================="
-printf '\033[1;32m%s\033[m\n' "|           Update ROS Environment Variables     |"
-printf '\033[1;32m%s\033[m\n' "|           TODO: HERE (Step 9)                  |"
-printf '\033[1;32m%s\033[m\n' "=================================================="
-
-echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
-echo 'export ROS_DOMAIN_ID=30' >> ~/.bashrc
-echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
-echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc
 
 printf '\033[1;32m%s\033[m\n' "=================================================="
 printf '\033[1;32m%s\033[m\n' "|           Install OpenCR firmware dependencies |"
