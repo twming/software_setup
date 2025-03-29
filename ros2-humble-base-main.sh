@@ -67,7 +67,7 @@ printf '\033[1;32m%s\033[m\n' "|           Install OpenCR firmware dependencies 
 printf '\033[1;32m%s\033[m\n' "|           TODO: HERE (Step 10)                 |"
 printf '\033[1;32m%s\033[m\n' "=================================================="
 
-sudo dpkg --add-architecture armhf -y
+sudo dpkg --add-architecture armhf
 sudo apt-get update  
 sudo apt-get install -y libc6:armhf
 
