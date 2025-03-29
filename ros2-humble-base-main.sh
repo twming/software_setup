@@ -84,21 +84,21 @@ printf '\033[1;32m%s\033[m\n' "=================================================
 printf '\033[1;32m%s\033[m\n' "|           ROS Installation Complete            |"
 printf '\033[1;32m%s\033[m\n' "=================================================="
 
-source ~/.bashrc
+. ~/.bashrc
 
 
-#printf '\033[1;32m%s\033[m\n' "=================================================="
-#printf '\033[1;32m%s\033[m\n' "|           Install LDS-02 Driver                |"
-#printf '\033[1;32m%s\033[m\n' "|           TODO: HERE (Step 8)                  |"
-#printf '\033[1;32m%s\033[m\n' "=================================================="
+printf '\033[1;32m%s\033[m\n' "=================================================="
+printf '\033[1;32m%s\033[m\n' "|           Install LDS-02 Driver                |"
+printf '\033[1;32m%s\033[m\n' "|           TODO: HERE (Step 8)                  |"
+printf '\033[1;32m%s\033[m\n' "=================================================="
 
-#sudo apt install -y python3-argcomplete python3-colcon-common-extensions libboost-system-dev build-essential
-#sudo apt install -y libudev-dev
-#mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
-#git clone -b humble https://github.com/ROBOTIS-GIT/ld08_driver.git
-#cd ~/turtlebot3_ws/
-#colcon build
-#echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+sudo apt install -y python3-argcomplete python3-colcon-common-extensions libboost-system-dev build-essential
+sudo apt install -y libudev-dev
+mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
+git clone -b humble https://github.com/ROBOTIS-GIT/ld08_driver.git
+cd ~/turtlebot3_ws/
+colcon build
+echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
 
 
 
