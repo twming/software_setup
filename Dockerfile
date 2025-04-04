@@ -29,11 +29,12 @@ RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 RUN echo "source /usr/share/gazebo/setup.sh" >> ~/.bashrc
 RUN echo "source /root/dev_ws/install/setup.bash" >> ~/.bashrc
 
-RUN echo "echo '------------------------------------------'" >> ~/.bashrc
-RUN echo "echo ' MAKE SURE IN dev_ws BEFORE colcon build. '" >> ~/.bashrc
-RUN echo "echo ' cd ~/dev_ws                              '" >> ~/.bashrc
-RUN echo "echo ' colcon build                             '" >> ~/.bashrc
-RUN echo "echo ' source ~/dev_ws/install/setup.bash       '" >> ~/.bashrc
-RUN echo "echo '------------------------------------------'" >> ~/.bashrc
+RUN echo "echo '------------------------------------------------'" >> ~/.bashrc
+RUN echo "echo '| MAKE SURE IN dev_ws BEFORE colcon build:     |'" >> ~/.bashrc
+RUN echo "echo '|   cd ~/dev_ws                                |'" >> ~/.bashrc
+RUN echo "echo '|   colcon build                               |'" >> ~/.bashrc
+RUN echo "echo '| AFTER BUILT, MAKE SURE source THE setup.bash |'" >> ~/.bashrc
+RUN echo "echo '|   source ~/dev_ws/install/setup.bash         |'" >> ~/.bashrc
+RUN echo "echo '------------------------------------------------'" >> ~/.bashrc
 
 WORKDIR /root
